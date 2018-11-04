@@ -1,4 +1,5 @@
 //client/components/Add.js
+//Это для ветки AddComponent
 import React from 'react';
 import {Button} from 'react-bootstrap';
 import Modal from 'react-modal';
