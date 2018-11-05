@@ -12,11 +12,15 @@ var generalSchema = new Schema({
     comment: String,
     passport: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'passport'
+        ref: 'Passport'
     },
     verification: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'verification'
+        ref: 'Verification'
+    },
+    repair: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Repair'
     }
 });
 

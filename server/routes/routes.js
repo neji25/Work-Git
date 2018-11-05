@@ -2,23 +2,31 @@
 var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
-var Expense = require('../../models/device');
+var Device = require('../../models/device');
 var Passport = require('../../models/passport');
+var Verification = require('../../models/verification');
+var Repair = require('../../models/repair'); 
+
 router.get('/', function(req, res){
   res.render('index')
 });
 router.route('/insert')
 .post(function(req,res) {
- var expense = new Expense();
-  expense.title = req.body.title;
-  expense.typeSO = req.body.typeSO;
-  expense.classSO = req.body.classSO;
-  expense.scope = req.body.scope;
-expense.save(function(err) {
+ var device = new Device({
+   title: req.body.title,
+   type: req.body.type,
+   class: req.body.class,
+   measureKind: req.body.measureKind,
+   scope: req.body.scope,
+   location: req.body.location,
+   status: req.body.status,
+   comment: req.body.comment
+ });
+device.save(function(err) {
       if (err)
         res.send(err);
       var passport = new Passport({
-        _device: expense._id,
+        _device: device._id,
         maker: req.body.maker,
         number: req.body.number
       })
