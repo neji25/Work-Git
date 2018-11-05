@@ -102,11 +102,11 @@ router.get('/delete', function(req, res){
 });
 router.get('/getAll', function(req, res) {
  
- Expense.find().exec(function(err, so) {
+ Device.find().exec(function(err, so) {
    if(err)
     res.send(err);
     res.json(so);
- })
+ });
 });
 
  module.exports = router;
