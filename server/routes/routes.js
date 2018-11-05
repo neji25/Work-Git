@@ -26,7 +26,7 @@ device.save(function(err) {
       if (err)
         res.send(err);
       var passport = new Passport({
-        _device: device._id,
+        device: device._id,
         serial_number: req.body.serial_number,
         passport_number: req.body.passport_number,
         inventory_number: req.body.inventory_number,
@@ -39,7 +39,7 @@ device.save(function(err) {
         change_data: req.body.change_data
       });
       var verification = new Verification({
-        _device: device._id,
+        device: device._id,
         last_verif_date: req.body.last_verif_date,
         verif_period: req.body.verif_period,
         next_verif_date: req.body.next_verif_date,
@@ -56,13 +56,24 @@ device.save(function(err) {
         mark_number: req.body.mark_number
       });
       var repair = new Repair({
-        _device: device._id,
+        device: device._id,
         reason_for_repair: req.body.reason_for_repair,
         repair_date: req.body.repair_date,
         repair_address: req.body.repair_address,
         repair_cost: req.body.repair_cost,
         short_description: req.body.short_description
       });
+      
+      passport.save(function(err) {
+        if(err) res.send(err);
+      })
+      verification.save(function(err) {
+        if(err) res.send(err);
+      })
+      repair.save(function(err) {
+        if(err) res.send(err);
+      })
+
       res.send('SO successfully added!');
   });
 })
