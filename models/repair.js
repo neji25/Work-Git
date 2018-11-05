@@ -3,7 +3,7 @@ var Schema = mongoose.Schema;
 
 var repairSchema = new Schema({
     reason_for_repair: String,
-    // repair_date: ,
+    repair_date: String, //Date
     repair_address: String,
     repair_cost: String, //Number
     short_description: String,

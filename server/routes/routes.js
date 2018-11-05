@@ -27,9 +27,42 @@ device.save(function(err) {
         res.send(err);
       var passport = new Passport({
         _device: device._id,
+        serial_number: req.body.serial_number,
+        passport_number: req.body.passport_number,
+        inventory_number: req.body.inventory_number,
+        stock_number: req.body.stock_number,
         maker: req.body.maker,
-        number: req.body.number
-      })
+        barcode: req.body.barcode,
+        initial_cost: req.body.initial_cost,
+        construction_date: req.body.construction_date,
+        start_date: req.body.start_date,
+        change_data: req.body.change_data
+      });
+      var verification = new Verification({
+        _device: device._id,
+        last_verif_date: req.body.last_verif_date,
+        verif_period: req.body.verif_period,
+        next_verif_date: req.body.next_verif_date,
+        left_until: req.body.left_until,
+        verif_cost: req.body.verif_cost,
+        verif_location: req.body.verif_location,
+        verif_unit_code: req.body.verif_unit_code,
+        verif_type: req.body.verif_type,
+        verif_metodology: req.body.verif_metodology,
+        verif_officer_name: req.body.verif_officer_name,
+        conclusion: req.body.conclusion,
+        report_number: req.body.report_number,
+        mark_type: req.body.mark_type,
+        mark_number: req.body.mark_number
+      });
+      var repair = new Repair({
+        _device: device._id,
+        reason_for_repair: req.body.reason_for_repair,
+        repair_date: req.body.repair_date,
+        repair_address: req.body.repair_address,
+        repair_cost: req.body.repair_cost,
+        short_description: req.body.short_description
+      });
       res.send('SO successfully added!');
   });
 })

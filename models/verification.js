@@ -2,11 +2,11 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var verificationSchema = new Schema({
-    //last_verif_date: ,
-    //verif_period: ,
-    //next_verif_date: ,
-    //left_until: ,
-    //verif_cost: ,
+    last_verif_date: String, //Date
+    verif_period: String, //Date
+    next_verif_date: String, //Date
+    left_until: String, //Date
+    verif_cost: String, //Number
     verif_location: String,
     verif_unit_code: String,
     verif_type: String,
