@@ -15,7 +15,11 @@ var verificationSchema = new Schema({
     conclusion: String,
     report_number: String, //Number
     mark_type: String,
-    mark_number: String //Number
+    mark_number: String, //Number
+    device: {
+        type: Schema.Types.ObjectId,
+        ref: 'General'
+    }
 });
 
 var Verification = mongoose.model('Verification', verificationSchema);
