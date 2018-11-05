@@ -3,6 +3,7 @@ var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
 var Expense = require('../../models/Expense');
+var Passport = require('../../models/passport');
 router.get('/', function(req, res){
   res.render('index')
 });
@@ -16,6 +17,11 @@ router.route('/insert')
 expense.save(function(err) {
       if (err)
         res.send(err);
+      var passport = new Passport({
+        _device: expense._id,
+        maker: req.body.maker,
+        number: req.body.number
+      })
       res.send('SO successfully added!');
   });
 })
