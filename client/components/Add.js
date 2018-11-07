@@ -9,10 +9,22 @@ class Add extends React.Component {
 constructor() {
       super();
 this.state = {
-        title: '',
-        typeSO: '',
-        classSO: '',
-        scope: '',
+  //  Device  
+        title: '', type: '', class: '', measureKind: '', scope: '', location: '',
+        status: '', comment: '',
+  //  Passport  
+        serial_number: '', passport_number: '', inventory_number: '', stock_number: '',
+        maker: '', barcode: '', initial_cost: '', construction_date: '', 
+        start_date: '', change_data: '',
+  //  Repair
+        reason_for_repair: '', repair_date: '', repair_address: '',
+        repair_cost: '', short_description: '',
+  //  Verification
+        last_verif_date: '', verif_period: '', next_verif_date: '', left_until: '',
+        verif_cost: '', verif_location: '', verif_unit_code: '', verif_type: '',
+        verif_metodology: '', verif_officer_name: '', conclusion: '', report_number: '',
+        mark_type: '', mark_number: '',
+  //  Modal    
         messageFromServer: '',
         modalIsOpen: false
       }
