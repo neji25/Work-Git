@@ -23,12 +23,12 @@ table {
 }
 .Modal {
    position: relative;
-   top: 250px;
-   left: 400px;
+   top: 0px;
+   left: 20px;
    right: 20px;
    bottom: 20px;
    background-color: #F5F5F5;
-   width:500px;
+   width:1100;
    border: 1px solid #000;
    border-radius: 4px;
    padding: 20px;

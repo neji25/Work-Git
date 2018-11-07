@@ -9,7 +9,7 @@ export default class App extends Component {
 
   constructor() {
     super();
-    this.state = {locationDevice: 'Nov', commentDevice: 2016, data: []};
+    this.state = {locationDevice: 'Nov', data: []};
     this.getData = this.getData.bind(this);
   }
   componentDidMount() {

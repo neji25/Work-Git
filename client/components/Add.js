@@ -115,17 +115,11 @@ handleSelectChange(e) {
         case "repair_address":
           this.setState({repair_address: e.target.value})
           break
+
+        default:
+          this.setState({title: "Ошибка в функции handleSelectChange"})
       }
-      if (e.target.name == 'classSO') {
-        this.setState({
-          classSO: e.target.value
-        });
-      }
-      if (e.target.name == 'scope') {
-        this.setState({
-          scope: e.target.value
-        });
-      }
+      
     }
 onClick(e) {
       this.insertNewSO(this);
@@ -146,7 +140,7 @@ insertNewSO(e) {
   //Passport
       serial_number: e.state.serial_number,
       passport_number: e.state.passport_number,
-      inventory_number: e.inventory_number.measureKind,
+      inventory_number: e.inventory_number,
       stock_number: e.state.stock_number,
       maker: e.state.maker,
       barcode: e.state.barcode,
@@ -306,10 +300,10 @@ render() {
         <label htmlFor="comment">Примечание:</label><input type="text" id="comment" name="comment" value={this.state.comment} onChange={this.handleTextChange}></input>
   {/* Passport */}
         <label htmlFor="serial_number">Заводской №:</label><input type="text" id="serial_number" name="serial_number" value={this.state.serial_number} onChange={this.handleTextChange}></input>
-        <label htmlFor="passport_number">Заводской №:</label><input type="text" id="passport_number" name="passport_number" value={this.state.passport_number} onChange={this.handleTextChange}></input>
-        <label htmlFor="inventory_number">Заводской №:</label><input type="text" id="inventory_number" name="inventory_number" value={this.state.inventory_number} onChange={this.handleTextChange}></input>
+        <label htmlFor="passport_number">Паспорт №:</label><input type="text" id="passport_number" name="passport_number" value={this.state.passport_number} onChange={this.handleTextChange}></input>
+        <label htmlFor="inventory_number">Инвентарный №:</label><input type="text" id="inventory_number" name="inventory_number" value={this.state.inventory_number} onChange={this.handleTextChange}></input>
         <label htmlFor="stock_number">Заводской №:</label><input type="text" id="stock_number" name="stock_number" value={this.state.stock_number} onChange={this.handleTextChange}></input>
-        <label htmlFor="maker">Сфера применения:</label><select id="maker" name="maker" value={this.state.maker} onChange={this.handleSelectChange}>
+        <label htmlFor="maker">Изготовитель:</label><select id="maker" name="maker" value={this.state.maker} onChange={this.handleSelectChange}>
             <option>Минская компания</option>
             <option>Гродненская компания</option>
             <option>Брестская компания</option>
