@@ -66,9 +66,6 @@ componentDidMount() {
       this.setState({
         location: this.props.locationDevice
       });
-      this.setState({
-        comment: this.props.commentDevice
-      });
     }
 handleSelectChange(e) {
       switch(e.target.value) {
