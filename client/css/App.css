@@ -28,7 +28,7 @@ table {
    right: 20px;
    bottom: 20px;
    background-color: #F5F5F5;
-   width: 960px;
+   width: 1000px;
    border: 1px solid #000;
    border-radius: 4px;
    padding: 20px;
@@ -57,3 +57,17 @@ fieldset{
 .closebtn{
    float:right;
  }
+.pAdd {
+    background-color: gray;
+    font-weight: bold;
+    color: white;
+}
+#Device {
+    float: left;
+    overflow: hidden;
+}
+#Passport {
+    float: left;
+    margin-left: 10px;
+    overflow: hidden;
+}

@@ -268,7 +268,8 @@ render() {
 <Link to={{pathname: '/', search: '' }} style={{ textDecoration: 'none' }}>
        <Button bsStyle="danger" bsSize="small" onClick={this.closeModal}><span className="closebtn glyphicon glyphicon-remove"></span></Button>
       </Link><br/>
-<fieldset>
+<div id="Device" style={{float: 'left'}}>
+  <p className="pAdd">Основные данные</p>
   {/* Device */}
        <label htmlFor="title">Наименование СИ:</label><input type="text" id="title" name="title" value={this.state.title} onChange={this.handleTextChange}></input>
        <label htmlFor="type">Тип СИ:</label><input type="text" id="type" name="type" value={this.state.type} onChange={this.handleTextChange}></input>
@@ -298,6 +299,8 @@ render() {
             <option>На списании</option>
         </select>
         <label htmlFor="comment">Примечание:</label><input type="text" id="comment" name="comment" value={this.state.comment} onChange={this.handleTextChange}></input>
+</div>
+<div id="Passport" style={{float:'left'}}>
   {/* Passport */}
         <label htmlFor="serial_number">Заводской №:</label><input type="text" id="serial_number" name="serial_number" value={this.state.serial_number} onChange={this.handleTextChange}></input>
         <label htmlFor="passport_number">Паспорт №:</label><input type="text" id="passport_number" name="passport_number" value={this.state.passport_number} onChange={this.handleTextChange}></input>
@@ -313,6 +316,8 @@ render() {
         <label htmlFor="construction_date">Дата ввода в эксплуатацию:</label><input type="text" id="construction_date" name="construction_date" value={this.state.construction_date} onChange={this.handleTextChange}></input>
         <label htmlFor="start_date">Дата изготовления:</label><input type="text" id="start_date" name="start_date" value={this.state.start_date} onChange={this.handleTextChange}></input>
         <label htmlFor="change_data">Дата замены на новый:</label><input type="text" id="change_data" name="change_data" value={this.state.change_data} onChange={this.handleTextChange}></input>
+</div> 
+<div className="Verification">
   {/* Verification */}
         <label htmlFor="last_verif_date">Дата последней поверки:</label><input type="text" id="last_verif_date" name="last_verif_date" value={this.state.last_verif_date} onChange={this.handleTextChange}></input>
         <label htmlFor="verif_period">Период поверки, месяц:</label><input type="text" id="verif_period" name="verif_period" value={this.state.verif_period} onChange={this.handleTextChange}></input>
@@ -352,6 +357,8 @@ render() {
             <option>Наклейка на свидетельство</option>
         </select>
         <label htmlFor="mark_number">Клеймо №:</label><input type="text" id="mark_number" name="mark_number" value={this.state.mark_number} onChange={this.handleTextChange}></input>
+</div>
+<div className="Repair">
   {/* Repair */}
         <label htmlFor="reason_for_repair">Причина ремонта:</label><select id="reason_for_repair" name="reason_for_repair" value={this.state.reason_for_repair} onChange={this.handleSelectChange}>
             <option>Причина 1</option>
@@ -366,8 +373,8 @@ render() {
         </select>
         <label htmlFor="repair_cost">Стоимость ремонта:</label><input type="text" id="repair_cost" name="repair_cost" value={this.state.repair_cost} onChange={this.handleTextChange}></input>
         <label htmlFor="short_description">Краткое описание ремонта:</label><input type="text" id="short_description" name="short_description" value={this.state.short_description} onChange={this.handleTextChange}></input>
-        
-      </fieldset>
+</div>         
+      {/* </fieldset> */}
 <div className='button-center'>
         <br/>
         <Button bsStyle="success" bsSize="small" onClick={this.onClick}>Add New Expense</Button>
