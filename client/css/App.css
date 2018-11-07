@@ -23,12 +23,12 @@ table {
 }
 .Modal {
    position: relative;
-   top: 0px;
-   left: 20px;
+   top: 10px;
+   left: 200px;
    right: 20px;
    bottom: 20px;
    background-color: #F5F5F5;
-   width:1100;
+   width: 960px;
    border: 1px solid #000;
    border-radius: 4px;
    padding: 20px;
@@ -51,7 +51,7 @@ label{
  text-align:right;
  }
 fieldset{
- border:none;
+ 
  margin:0px auto;
  }
 .closebtn{
