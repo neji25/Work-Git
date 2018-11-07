@@ -68,7 +68,7 @@ componentDidMount() {
       });
     }
 handleSelectChange(e) {
-      switch(e.target.value) {
+      switch(e.target.name) {
     //Device 
         case "class":
           this.setState({class: e.target.value})

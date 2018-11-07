@@ -32706,7 +32706,7 @@ var Add = function (_React$Component) {
   }, {
     key: 'handleSelectChange',
     value: function handleSelectChange(e) {
-      switch (e.target.value) {
+      switch (e.target.name) {
         //Device 
         case "class":
           this.setState({ class: e.target.value });
