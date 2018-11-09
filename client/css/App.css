@@ -24,14 +24,19 @@ table {
 .Modal {
    position: relative;
    top: 10px;
-   left: 200px;
+   left: 150px;
    right: 20px;
    bottom: 20px;
    background-color: #F5F5F5;
-   width: 960px;
+<<<<<<< HEAD
+   width: 1300px;
+=======
+   width: 1000px;
+>>>>>>> 4926308ad414f5166d5bdd84f91160c6120c86fc
    border: 1px solid #000;
    border-radius: 4px;
    padding: 20px;
+   height: 700px;
  }
 .Overlay {
    position: fixed;
@@ -57,3 +62,11 @@ fieldset{
 .closebtn{
    float:right;
  }
+.pAdd {
+    background-color: gray;
+    font-weight: bold;
+    color: white;
+}
+input {
+    height: 18px;
+}

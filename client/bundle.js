@@ -32929,27 +32929,32 @@ var Add = function (_React$Component) {
             _react2.default.createElement('br', null),
             _react2.default.createElement(
               'fieldset',
-              null,
+              { id: 'Device', style: { float: 'left' } },
+              _react2.default.createElement(
+                'p',
+                { className: 'pAdd' },
+                '\u041E\u0441\u043D\u043E\u0432\u043D\u044B\u0435 \u0434\u0430\u043D\u043D\u044B\u0435'
+              ),
               _react2.default.createElement(
                 'label',
                 { htmlFor: 'title' },
                 '\u041D\u0430\u0438\u043C\u0435\u043D\u043E\u0432\u0430\u043D\u0438\u0435 \u0421\u0418:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'title', name: 'title', value: this.state.title, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'title', name: 'title', style: { position: "absolute", left: "225px" }, value: this.state.title, onChange: this.handleTextChange }),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'type' },
+                { htmlFor: 'type', style: { position: "absolute", top: "100px", left: "19px" } },
                 '\u0422\u0438\u043F \u0421\u0418:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'type', name: 'type', value: this.state.type, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'type', name: 'type', style: { position: "absolute", top: "100px", left: "225px" }, value: this.state.type, onChange: this.handleTextChange }),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'class' },
+                { htmlFor: 'class', style: { position: "absolute", left: "20px", top: "127px" } },
                 '\u041A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u044F \u0421\u0418:'
               ),
               _react2.default.createElement(
                 'select',
-                { id: 'class', name: 'class', value: this.state.class, onChange: this.handleSelectChange },
+                { id: 'class', name: 'class', style: { position: "absolute", top: "127px", left: "225px" }, value: this.state.class, onChange: this.handleSelectChange },
                 _react2.default.createElement(
                   'option',
                   null,
@@ -32968,12 +32973,12 @@ var Add = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'measureKind' },
+                { htmlFor: 'measureKind', style: { position: "absolute", top: "154px", left: "19px" } },
                 '\u0412\u0438\u0434 \u0438\u0437\u043C\u0435\u0440\u0435\u043D\u0438\u044F:'
               ),
               _react2.default.createElement(
                 'select',
-                { id: 'measureKind', name: 'measureKind', value: this.state.measureKind, onChange: this.handleSelectChange },
+                { id: 'measureKind', name: 'measureKind', style: { position: "absolute", top: "154px", left: "225px" }, value: this.state.measureKind, onChange: this.handleSelectChange },
                 _react2.default.createElement(
                   'option',
                   null,
@@ -32992,12 +32997,12 @@ var Add = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'scope' },
+                { htmlFor: 'scope', style: { position: "absolute", top: "181px", left: "19px" } },
                 '\u0421\u0444\u0435\u0440\u0430 \u043F\u0440\u0438\u043C\u0435\u043D\u0435\u043D\u0438\u044F:'
               ),
               _react2.default.createElement(
                 'select',
-                { id: 'scope', name: 'scope', value: this.state.scope, onChange: this.handleSelectChange },
+                { id: 'scope', name: 'scope', style: { position: "absolute", top: "181px", left: "225px" }, value: this.state.scope, onChange: this.handleSelectChange },
                 _react2.default.createElement(
                   'option',
                   null,
@@ -33016,12 +33021,12 @@ var Add = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'location' },
-                '\u0421\u0444\u0435\u0440\u0430 \u043F\u0440\u0438\u043C\u0435\u043D\u0435\u043D\u0438\u044F:'
+                { htmlFor: 'location', style: { position: "absolute", top: "208px", left: "19px" } },
+                '\u041C\u0435\u0441\u0442\u043E \u043D\u0430\u0445\u043E\u0436\u0434\u0435\u043D\u0438\u044F:'
               ),
               _react2.default.createElement(
                 'select',
-                { id: 'location', name: 'location', value: this.state.location, onChange: this.handleSelectChange },
+                { id: 'location', name: 'location', style: { position: "absolute", top: "208px", left: "225px" }, value: this.state.location, onChange: this.handleSelectChange },
                 _react2.default.createElement(
                   'option',
                   null,
@@ -33040,12 +33045,12 @@ var Add = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'status' },
-                '\u0421\u0444\u0435\u0440\u0430 \u043F\u0440\u0438\u043C\u0435\u043D\u0435\u043D\u0438\u044F:'
+                { htmlFor: 'status', style: { position: "absolute", top: "235px", left: "19px" } },
+                '\u0421\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u0435 \u0421\u0418:'
               ),
               _react2.default.createElement(
                 'select',
-                { id: 'status', name: 'status', value: this.state.status, onChange: this.handleSelectChange },
+                { id: 'status', name: 'status', style: { position: "absolute", top: "235px", left: "225px" }, value: this.state.status, onChange: this.handleSelectChange },
                 _react2.default.createElement(
                   'option',
                   null,
@@ -33064,42 +33069,46 @@ var Add = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'comment' },
+                { htmlFor: 'comment', style: { position: "absolute", top: "262px", left: "19px" } },
                 '\u041F\u0440\u0438\u043C\u0435\u0447\u0430\u043D\u0438\u0435:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'comment', name: 'comment', value: this.state.comment, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'comment', name: 'comment', style: { position: "absolute", top: "262px", left: "225px" }, value: this.state.comment, onChange: this.handleTextChange })
+            ),
+            _react2.default.createElement(
+              'fieldset',
+              { className: 'Passport' },
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'serial_number' },
+                { htmlFor: 'serial_number', style: { position: "absolute", left: "19px", top: "354px" } },
                 '\u0417\u0430\u0432\u043E\u0434\u0441\u043A\u043E\u0439 \u2116:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'serial_number', name: 'serial_number', value: this.state.serial_number, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'serial_number', name: 'serial_number', style: { position: "absolute", left: "225px", top: "354px" }, value: this.state.serial_number, onChange: this.handleTextChange }),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'passport_number' },
+                { htmlFor: 'passport_number', style: { position: "absolute", top: "354px", left: "463px" } },
                 '\u041F\u0430\u0441\u043F\u043E\u0440\u0442 \u2116:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'passport_number', name: 'passport_number', value: this.state.passport_number, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'passport_number', name: 'passport_number', style: { position: "absolute", top: "354px", left: "630spx" }, value: this.state.passport_number, onChange: this.handleTextChange }),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'inventory_number' },
+                { htmlFor: 'inventory_number', style: { position: "absolute", top: "382px", left: "19px" } },
                 '\u0418\u043D\u0432\u0435\u043D\u0442\u0430\u0440\u043D\u044B\u0439 \u2116:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'inventory_number', name: 'inventory_number', value: this.state.inventory_number, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'inventory_number', name: 'inventory_number', style: { position: "absolute", top: "382px", left: "225px" }, value: this.state.inventory_number, onChange: this.handleTextChange }),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'stock_number' },
-                '\u0417\u0430\u0432\u043E\u0434\u0441\u043A\u043E\u0439 \u2116:'
+                { htmlFor: 'stock_number', style: { position: "absolute", top: "382px", left: "463px" } },
+                '\u041D\u043E\u043C\u0435\u043D\u043A\u043B\u0430\u0442\u0443\u0440\u043D\u044B\u0439 \u043D\u043E\u043C\u0435\u0440'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'stock_number', name: 'stock_number', value: this.state.stock_number, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'stock_number', name: 'stock_number', style: { position: "absolute", top: "382px", left: "630px" }, value: this.state.stock_number, onChange: this.handleTextChange }),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'maker' },
-                '\u0418\u0437\u0433\u043E\u0442\u043E\u0432\u0438\u0442\u0435\u043B\u044C:'
+                { htmlFor: 'maker', style: { position: "absolute", top: "410px", left: "19px" } },
+                ' \u0418\u0437\u0433\u043E\u0442\u043E\u0432\u0438\u0442\u0435\u043B\u044C:'
               ),
               _react2.default.createElement(
                 'select',
-                { id: 'maker', name: 'maker', value: this.state.maker, onChange: this.handleSelectChange },
+                { id: 'maker', name: 'maker', style: { position: "absolute", top: "410px", left: "225px" }, value: this.state.maker, onChange: this.handleSelectChange },
                 _react2.default.createElement(
                   'option',
                   null,
@@ -33145,7 +33154,11 @@ var Add = function (_React$Component) {
                 { htmlFor: 'change_data' },
                 '\u0414\u0430\u0442\u0430 \u0437\u0430\u043C\u0435\u043D\u044B \u043D\u0430 \u043D\u043E\u0432\u044B\u0439:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'change_data', name: 'change_data', value: this.state.change_data, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'change_data', name: 'change_data', value: this.state.change_data, onChange: this.handleTextChange })
+            ),
+            _react2.default.createElement(
+              'fieldset',
+              { className: 'Verification' },
               _react2.default.createElement(
                 'label',
                 { htmlFor: 'last_verif_date' },
@@ -33337,7 +33350,11 @@ var Add = function (_React$Component) {
                 { htmlFor: 'mark_number' },
                 '\u041A\u043B\u0435\u0439\u043C\u043E \u2116:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'mark_number', name: 'mark_number', value: this.state.mark_number, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'mark_number', name: 'mark_number', value: this.state.mark_number, onChange: this.handleTextChange })
+            ),
+            _react2.default.createElement(
+              'fieldset',
+              { className: 'Repair' },
               _react2.default.createElement(
                 'label',
                 { htmlFor: 'reason_for_repair' },
@@ -46185,7 +46202,7 @@ exports = module.exports = __webpack_require__(376)(undefined);
 
 
 // module
-exports.push([module.i, "/*client/css/App.css*/\r\n.button-col {\r\n    width:100px;\r\n    text-align:center;\r\n}\r\n.desc-col {\r\n width:300px;\r\n text-align:left;\r\n}\r\ntable {\r\n    counter-reset: tableCount;\r\n}\r\n.counterCell:before {\r\n    content: counter(tableCount);\r\n    counter-increment: tableCount;\r\n}\r\n.counterCell {\r\n text-align: center;\r\n width:50px;\r\n}\r\n.button-center {\r\n text-align: center;\r\n}\r\n.Modal {\r\n   position: relative;\r\n   top: 10px;\r\n   left: 200px;\r\n   right: 20px;\r\n   bottom: 20px;\r\n   background-color: #F5F5F5;\r\n   width: 960px;\r\n   border: 1px solid #000;\r\n   border-radius: 4px;\r\n   padding: 20px;\r\n }\r\n.Overlay {\r\n   position: fixed;\r\n   top: 0;\r\n   left: 0;\r\n   right: 0;\r\n   bottom: 0;\r\n   background-color: rebeccapurple;\r\n }\r\n.button-center {\r\n  text-align: center;\r\n }\r\nlabel{\r\n display:inline-block;\r\n width:200px;\r\n margin-right:30px;\r\n text-align:right;\r\n }\r\nfieldset{\r\n \r\n margin:0px auto;\r\n }\r\n.closebtn{\r\n   float:right;\r\n }", ""]);
+exports.push([module.i, "/*client/css/App.css*/\r\n.button-col {\r\n    width:100px;\r\n    text-align:center;\r\n}\r\n.desc-col {\r\n width:300px;\r\n text-align:left;\r\n}\r\ntable {\r\n    counter-reset: tableCount;\r\n}\r\n.counterCell:before {\r\n    content: counter(tableCount);\r\n    counter-increment: tableCount;\r\n}\r\n.counterCell {\r\n text-align: center;\r\n width:50px;\r\n}\r\n.button-center {\r\n text-align: center;\r\n}\r\n.Modal {\r\n   position: relative;\r\n   top: 10px;\r\n   left: 150px;\r\n   right: 20px;\r\n   bottom: 20px;\r\n   background-color: #F5F5F5;\r\n<<<<<<< HEAD\r\n   width: 1300px;\r\n=======\r\n   width: 1000px;\r\n>>>>>>> 4926308ad414f5166d5bdd84f91160c6120c86fc\r\n   border: 1px solid #000;\r\n   border-radius: 4px;\r\n   padding: 20px;\r\n   height: 700px;\r\n }\r\n.Overlay {\r\n   position: fixed;\r\n   top: 0;\r\n   left: 0;\r\n   right: 0;\r\n   bottom: 0;\r\n   background-color: rebeccapurple;\r\n }\r\n.button-center {\r\n  text-align: center;\r\n }\r\nlabel{\r\n display:inline-block;\r\n width:200px;\r\n margin-right:30px;\r\n text-align:right;\r\n }\r\nfieldset{\r\n \r\n margin:0px auto;\r\n }\r\n.closebtn{\r\n   float:right;\r\n }\r\n.pAdd {\r\n    background-color: gray;\r\n    font-weight: bold;\r\n    color: white;\r\n}\r\ninput {\r\n    height: 18px;\r\n}", ""]);
 
 // exports
 
