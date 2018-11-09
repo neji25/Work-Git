@@ -32928,7 +32928,11 @@ var Add = function (_React$Component) {
             ),
             _react2.default.createElement('br', null),
             _react2.default.createElement(
+<<<<<<< HEAD
               'fieldset',
+=======
+              'div',
+>>>>>>> 4926308ad414f5166d5bdd84f91160c6120c86fc
               { id: 'Device', style: { float: 'left' } },
               _react2.default.createElement(
                 'p',
@@ -33072,11 +33076,19 @@ var Add = function (_React$Component) {
                 { htmlFor: 'comment', style: { position: "absolute", top: "262px", left: "19px" } },
                 '\u041F\u0440\u0438\u043C\u0435\u0447\u0430\u043D\u0438\u0435:'
               ),
+<<<<<<< HEAD
               _react2.default.createElement('input', { type: 'text', id: 'comment', name: 'comment', style: { position: "absolute", top: "262px", left: "225px" }, value: this.state.comment, onChange: this.handleTextChange })
             ),
             _react2.default.createElement(
               'fieldset',
               { className: 'Passport' },
+=======
+              _react2.default.createElement('input', { type: 'text', id: 'comment', name: 'comment', value: this.state.comment, onChange: this.handleTextChange })
+            ),
+            _react2.default.createElement(
+              'div',
+              { id: 'Passport', style: { float: 'left' } },
+>>>>>>> 4926308ad414f5166d5bdd84f91160c6120c86fc
               _react2.default.createElement(
                 'label',
                 { htmlFor: 'serial_number', style: { position: "absolute", left: "19px", top: "354px" } },
@@ -33157,7 +33169,11 @@ var Add = function (_React$Component) {
               _react2.default.createElement('input', { type: 'text', id: 'change_data', name: 'change_data', value: this.state.change_data, onChange: this.handleTextChange })
             ),
             _react2.default.createElement(
+<<<<<<< HEAD
               'fieldset',
+=======
+              'div',
+>>>>>>> 4926308ad414f5166d5bdd84f91160c6120c86fc
               { className: 'Verification' },
               _react2.default.createElement(
                 'label',
@@ -33353,7 +33369,11 @@ var Add = function (_React$Component) {
               _react2.default.createElement('input', { type: 'text', id: 'mark_number', name: 'mark_number', value: this.state.mark_number, onChange: this.handleTextChange })
             ),
             _react2.default.createElement(
+<<<<<<< HEAD
               'fieldset',
+=======
+              'div',
+>>>>>>> 4926308ad414f5166d5bdd84f91160c6120c86fc
               { className: 'Repair' },
               _react2.default.createElement(
                 'label',
@@ -46202,7 +46222,11 @@ exports = module.exports = __webpack_require__(376)(undefined);
 
 
 // module
+<<<<<<< HEAD
 exports.push([module.i, "/*client/css/App.css*/\r\n.button-col {\r\n    width:100px;\r\n    text-align:center;\r\n}\r\n.desc-col {\r\n width:300px;\r\n text-align:left;\r\n}\r\ntable {\r\n    counter-reset: tableCount;\r\n}\r\n.counterCell:before {\r\n    content: counter(tableCount);\r\n    counter-increment: tableCount;\r\n}\r\n.counterCell {\r\n text-align: center;\r\n width:50px;\r\n}\r\n.button-center {\r\n text-align: center;\r\n}\r\n.Modal {\r\n   position: relative;\r\n   top: 10px;\r\n   left: 150px;\r\n   right: 20px;\r\n   bottom: 20px;\r\n   background-color: #F5F5F5;\r\n<<<<<<< HEAD\r\n   width: 1300px;\r\n=======\r\n   width: 1000px;\r\n>>>>>>> 4926308ad414f5166d5bdd84f91160c6120c86fc\r\n   border: 1px solid #000;\r\n   border-radius: 4px;\r\n   padding: 20px;\r\n   height: 700px;\r\n }\r\n.Overlay {\r\n   position: fixed;\r\n   top: 0;\r\n   left: 0;\r\n   right: 0;\r\n   bottom: 0;\r\n   background-color: rebeccapurple;\r\n }\r\n.button-center {\r\n  text-align: center;\r\n }\r\nlabel{\r\n display:inline-block;\r\n width:200px;\r\n margin-right:30px;\r\n text-align:right;\r\n }\r\nfieldset{\r\n \r\n margin:0px auto;\r\n }\r\n.closebtn{\r\n   float:right;\r\n }\r\n.pAdd {\r\n    background-color: gray;\r\n    font-weight: bold;\r\n    color: white;\r\n}\r\ninput {\r\n    height: 18px;\r\n}", ""]);
+=======
+exports.push([module.i, "/*client/css/App.css*/\r\n.button-col {\r\n    width:100px;\r\n    text-align:center;\r\n}\r\n.desc-col {\r\n width:300px;\r\n text-align:left;\r\n}\r\ntable {\r\n    counter-reset: tableCount;\r\n}\r\n.counterCell:before {\r\n    content: counter(tableCount);\r\n    counter-increment: tableCount;\r\n}\r\n.counterCell {\r\n text-align: center;\r\n width:50px;\r\n}\r\n.button-center {\r\n text-align: center;\r\n}\r\n.Modal {\r\n   position: relative;\r\n   top: 10px;\r\n   left: 200px;\r\n   right: 20px;\r\n   bottom: 20px;\r\n   background-color: #F5F5F5;\r\n   width: 1000px;\r\n   border: 1px solid #000;\r\n   border-radius: 4px;\r\n   padding: 20px;\r\n }\r\n.Overlay {\r\n   position: fixed;\r\n   top: 0;\r\n   left: 0;\r\n   right: 0;\r\n   bottom: 0;\r\n   background-color: rebeccapurple;\r\n }\r\n.button-center {\r\n  text-align: center;\r\n }\r\nlabel{\r\n display:inline-block;\r\n width:200px;\r\n margin-right:30px;\r\n text-align:right;\r\n }\r\nfieldset{\r\n \r\n margin:0px auto;\r\n }\r\n.closebtn{\r\n   float:right;\r\n }\r\n.pAdd {\r\n    background-color: gray;\r\n    font-weight: bold;\r\n    color: white;\r\n}\r\n#Device {\r\n    float: left;\r\n    overflow: hidden;\r\n}\r\n#Passport {\r\n    float: left;\r\n    margin-left: 10px;\r\n    overflow: hidden;\r\n}", ""]);
+>>>>>>> 4926308ad414f5166d5bdd84f91160c6120c86fc
 
 // exports
 
