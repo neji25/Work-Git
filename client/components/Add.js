@@ -268,51 +268,76 @@ render() {
 <Link to={{pathname: '/', search: '' }} style={{ textDecoration: 'none' }}>
        <Button bsStyle="danger" bsSize="small" onClick={this.closeModal}><span className="closebtn glyphicon glyphicon-remove"></span></Button>
       </Link><br/>
-<fieldset>
+<<<<<<< HEAD
+<fieldset className="Device">
+=======
+<div id="Device" style={{float: 'left'}}>
+>>>>>>> 4926308ad414f5166d5bdd84f91160c6120c86fc
+  <p className="pAdd">Основные данные</p>
   {/* Device */}
-       <label htmlFor="title">Наименование СИ:</label><input type="text" id="title" name="title" value={this.state.title} onChange={this.handleTextChange}></input>
-       <label htmlFor="type">Тип СИ:</label><input type="text" id="type" name="type" value={this.state.type} onChange={this.handleTextChange}></input>
-       <label htmlFor="class">Категория СИ:</label><select id="class" name="class" value={this.state.class} onChange={this.handleSelectChange}>
+       <label htmlFor="title">Наименование СИ:</label><input type="text" id="title" name="title" style={{position: "absolute", left: "225px"}} value={this.state.title} onChange={this.handleTextChange}></input>
+       <label htmlFor="type" style={{position:"absolute", top:"100px", left:"19px"}}>Тип СИ:</label><input type="text" id="type" name="type" style={{position:"absolute", top:"100px", left:"225px"}} value={this.state.type} onChange={this.handleTextChange}></input>
+       <label htmlFor="class" style={{position:"absolute", left:"20px", top:"127px"}}>Категория СИ:</label><select id="class" name="class" style={{position: "absolute", top:"127px", left:"225px"}} value={this.state.class} onChange={this.handleSelectChange}>
             <option>Вторичные (исходные) эталоны</option>
             <option>ИИС, подлежащие обязательной гос. поверке</option>
             <option>Национальные (исходные) эталоны</option>
          </select>
-       <label htmlFor="measureKind">Вид измерения:</label><select id="measureKind" name="measureKind" value={this.state.measureKind} onChange={this.handleSelectChange}>
+       <label htmlFor="measureKind" style={{position: "absolute", top:"154px", left:"19px"}}>Вид измерения:</label><select id="measureKind" name="measureKind" style={{position:"absolute", top:"154px", left:"225px"}} value={this.state.measureKind} onChange={this.handleSelectChange}>
             <option>Измерение времени и частоты</option>
             <option>Измерения геометрических величин</option>
             <option>Измерение фихико-химического состава</option>
          </select>
-       <label htmlFor="scope">Сфера применения:</label><select id="scope" name="scope" value={this.state.scope} onChange={this.handleSelectChange}>
+       <label htmlFor="scope" style={{position:"absolute", top:"181px", left:"19px"}}>Сфера применения:</label><select id="scope" name="scope" style={{position:"absolute", top:"181px", left:"225px"}} value={this.state.scope} onChange={this.handleSelectChange}>
             <option>Медицина</option>
             <option>Легкая промышленность</option>
             <option>Пищевая промышленность</option>
         </select>
-        <label htmlFor="location">Сфера применения:</label><select id="location" name="location" value={this.state.location} onChange={this.handleSelectChange}>
+        <label htmlFor="location" style={{position:"absolute", top:"208px", left:"19px"}}>Место нахождения:</label><select id="location" name="location" style={{position:"absolute", top:"208px", left:"225px"}} value={this.state.location} onChange={this.handleSelectChange}>
             <option>Волковысское ЦСМС</option>
             <option>Гродненское ЦСМС</option>
             <option>Брестское ЦСМС</option>
         </select>
-        <label htmlFor="status">Сфера применения:</label><select id="status" name="status" value={this.state.status} onChange={this.handleSelectChange}>
+        <label htmlFor="status" style={{position:"absolute", top:"235px", left:"19px"}}>Состояние СИ:</label><select id="status" name="status" style={{position:"absolute", top:"235px", left:"225px"}} value={this.state.status} onChange={this.handleSelectChange}>
             <option>В поверке</option>
             <option>В ремонте</option>
             <option>На списании</option>
         </select>
+<<<<<<< HEAD
+        <label htmlFor="comment" style={{position:"absolute", top:"262px", left:"19px"}}>Примечание:</label><input type="text" id="comment" name="comment" style={{position:"absolute", top:"262px", left:"225px"}} value={this.state.comment} onChange={this.handleTextChange}></input>
+</fieldset>
+<fieldset className="Passport">
+=======
         <label htmlFor="comment">Примечание:</label><input type="text" id="comment" name="comment" value={this.state.comment} onChange={this.handleTextChange}></input>
+</div>
+<div id="Passport" style={{float:'left'}}>
+>>>>>>> 4926308ad414f5166d5bdd84f91160c6120c86fc
   {/* Passport */}
-        <label htmlFor="serial_number">Заводской №:</label><input type="text" id="serial_number" name="serial_number" value={this.state.serial_number} onChange={this.handleTextChange}></input>
-        <label htmlFor="passport_number">Паспорт №:</label><input type="text" id="passport_number" name="passport_number" value={this.state.passport_number} onChange={this.handleTextChange}></input>
-        <label htmlFor="inventory_number">Инвентарный №:</label><input type="text" id="inventory_number" name="inventory_number" value={this.state.inventory_number} onChange={this.handleTextChange}></input>
-        <label htmlFor="stock_number">Заводской №:</label><input type="text" id="stock_number" name="stock_number" value={this.state.stock_number} onChange={this.handleTextChange}></input>
-        <label htmlFor="maker">Изготовитель:</label><select id="maker" name="maker" value={this.state.maker} onChange={this.handleSelectChange}>
+        <label htmlFor="serial_number" style={{position:"absolute", left:"19px", top:"354px"}}>Заводской №:</label><input type="text" id="serial_number" name="serial_number" style={{position:"absolute", left:"225px", top:"354px"}} value={this.state.serial_number} onChange={this.handleTextChange}></input>
+        <label htmlFor="passport_number" style={{position:"absolute", top:"354px", left:"463px"}}>Паспорт №:</label><input type="text" id="passport_number" name="passport_number" style={{position:"absolute", top:"354px", left:"630spx"}} value={this.state.passport_number} onChange={this.handleTextChange}></input>
+        <label htmlFor="inventory_number" style={{position:"absolute", top:"382px", left:"19px"}}>Инвентарный №:</label><input type="text" id="inventory_number" name="inventory_number" style={{position:"absolute", top:"382px", left:"225px"}} value={this.state.inventory_number} onChange={this.handleTextChange}></input>
+        <label htmlFor="stock_number" style={{position:"absolute", top:"382px", left:"463px"}}>Номенклатурный номер</label><input type="text" id="stock_number" name="stock_number" style={{position:"absolute", top:"382px", left:"630px"}} value={this.state.stock_number} onChange={this.handleTextChange}></input>
+        <label htmlFor="maker"> style={{position:"absolute", top:"410px", left:"19px"}}Изготовитель:</label><select id="maker" name="maker" style={{position:"absolute", top:"410px", left:"225px"}} value={this.state.maker} onChange={this.handleSelectChange}>
             <option>Минская компания</option>
             <option>Гродненская компания</option>
             <option>Брестская компания</option>
         </select>
+<<<<<<< HEAD
+        <label htmlFor="barcode" style={{position:"absolute", top:"438px", left:"19px"}}>Штрих-код:</label><input type="text" id="barcode" name="barcode" style={{position:"absolute", top:"438px", left:"225px"}} value={this.state.barcode} onChange={this.handleTextChange}></input>
+        <label htmlFor="initial_cost" style={{position:"absolute", top:"466px", left:"19px"}}>Начальная стоимость:</label><input type="text" id="initial_cost" name="initial_cost" style={{position:"absolute", top:"466px", left:"225px"}} value={this.state.initial_cost} onChange={this.handleTextChange}></input>
+        <label htmlFor="construction_date" style={{position:"absolute", top:"466px", left:"462px"}}>Дата ввода в эксплуатацию:</label><input type="text" id="construction_date" name="construction_date" style={{position:"absolute", top:"466px", left:"672px"}} value={this.state.construction_date} onChange={this.handleTextChange}></input>
+        <label htmlFor="start_date" style={{position:"absolute", top:"494px", left:"19px"}}>Дата изготовления:</label><input type="text" id="start_date" name="start_date" style={{position:"absolute", top:"494px", left:"225px"}} value={this.state.start_date} onChange={this.handleTextChange}></input>
+        <label htmlFor="change_data" style={{position:"absolute", top:"494px", left:"462px"}}>Дата замены на новый:</label><input type="text" id="change_data" name="change_data" style={{position:"absolute", top:"494px", left:"672px"}} value={this.state.change_data} onChange={this.handleTextChange}></input>
+</fieldset> 
+<fieldset className="Verification">
+=======
         <label htmlFor="barcode">Штрих-код:</label><input type="text" id="barcode" name="barcode" value={this.state.barcode} onChange={this.handleTextChange}></input>
         <label htmlFor="initial_cost">Начальная стоимость:</label><input type="text" id="initial_cost" name="initial_cost" value={this.state.initial_cost} onChange={this.handleTextChange}></input>
         <label htmlFor="construction_date">Дата ввода в эксплуатацию:</label><input type="text" id="construction_date" name="construction_date" value={this.state.construction_date} onChange={this.handleTextChange}></input>
         <label htmlFor="start_date">Дата изготовления:</label><input type="text" id="start_date" name="start_date" value={this.state.start_date} onChange={this.handleTextChange}></input>
         <label htmlFor="change_data">Дата замены на новый:</label><input type="text" id="change_data" name="change_data" value={this.state.change_data} onChange={this.handleTextChange}></input>
+</div> 
+<div className="Verification">
+>>>>>>> 4926308ad414f5166d5bdd84f91160c6120c86fc
   {/* Verification */}
         <label htmlFor="last_verif_date">Дата последней поверки:</label><input type="text" id="last_verif_date" name="last_verif_date" value={this.state.last_verif_date} onChange={this.handleTextChange}></input>
         <label htmlFor="verif_period">Период поверки, месяц:</label><input type="text" id="verif_period" name="verif_period" value={this.state.verif_period} onChange={this.handleTextChange}></input>
@@ -352,6 +377,13 @@ render() {
             <option>Наклейка на свидетельство</option>
         </select>
         <label htmlFor="mark_number">Клеймо №:</label><input type="text" id="mark_number" name="mark_number" value={this.state.mark_number} onChange={this.handleTextChange}></input>
+<<<<<<< HEAD
+</fieldset>
+<fieldset className="Repair">
+=======
+</div>
+<div className="Repair">
+>>>>>>> 4926308ad414f5166d5bdd84f91160c6120c86fc
   {/* Repair */}
         <label htmlFor="reason_for_repair">Причина ремонта:</label><select id="reason_for_repair" name="reason_for_repair" value={this.state.reason_for_repair} onChange={this.handleSelectChange}>
             <option>Причина 1</option>
@@ -366,8 +398,12 @@ render() {
         </select>
         <label htmlFor="repair_cost">Стоимость ремонта:</label><input type="text" id="repair_cost" name="repair_cost" value={this.state.repair_cost} onChange={this.handleTextChange}></input>
         <label htmlFor="short_description">Краткое описание ремонта:</label><input type="text" id="short_description" name="short_description" value={this.state.short_description} onChange={this.handleTextChange}></input>
-        
-      </fieldset>
+<<<<<<< HEAD
+</fieldset>         
+=======
+</div>         
+>>>>>>> 4926308ad414f5166d5bdd84f91160c6120c86fc
+      {/* </fieldset> */}
 <div className='button-center'>
         <br/>
         <Button bsStyle="success" bsSize="small" onClick={this.onClick}>Add New Expense</Button>
