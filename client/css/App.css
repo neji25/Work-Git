@@ -24,19 +24,11 @@ table {
 .Modal {
    position: relative;
    top: 10px;
-   left: 150px;
+   left: 55px;
    right: 20px;
    bottom: 20px;
    background-color: #F5F5F5;
-<<<<<<< HEAD
-<<<<<<< HEAD
    width: 1300px;
-=======
-   width: 1000px;
->>>>>>> 4926308ad414f5166d5bdd84f91160c6120c86fc
-=======
-   width: 1000px;
->>>>>>> 4926308ad414f5166d5bdd84f91160c6120c86fc
    border: 1px solid #000;
    border-radius: 4px;
    padding: 20px;
@@ -71,17 +63,9 @@ fieldset{
     font-weight: bold;
     color: white;
 }
-<<<<<<< HEAD
+label {
+    text-align: left;
+}
 input {
     height: 18px;
-=======
-#Device {
-    float: left;
-    overflow: hidden;
-}
-#Passport {
-    float: left;
-    margin-left: 10px;
-    overflow: hidden;
->>>>>>> 4926308ad414f5166d5bdd84f91160c6120c86fc
 }

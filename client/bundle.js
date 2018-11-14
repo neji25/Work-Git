@@ -32781,7 +32781,7 @@ var Add = function (_React$Component) {
         //Passport
         serial_number: e.state.serial_number,
         passport_number: e.state.passport_number,
-        inventory_number: e.inventory_number,
+        inventory_number: e.state.inventory_number,
         stock_number: e.state.stock_number,
         maker: e.state.maker,
         barcode: e.state.barcode,
@@ -32928,11 +32928,7 @@ var Add = function (_React$Component) {
             ),
             _react2.default.createElement('br', null),
             _react2.default.createElement(
-<<<<<<< HEAD
               'fieldset',
-=======
-              'div',
->>>>>>> 4926308ad414f5166d5bdd84f91160c6120c86fc
               { id: 'Device', style: { float: 'left' } },
               _react2.default.createElement(
                 'p',
@@ -32959,6 +32955,7 @@ var Add = function (_React$Component) {
               _react2.default.createElement(
                 'select',
                 { id: 'class', name: 'class', style: { position: "absolute", top: "127px", left: "225px" }, value: this.state.class, onChange: this.handleSelectChange },
+                _react2.default.createElement('option', null),
                 _react2.default.createElement(
                   'option',
                   null,
@@ -32983,6 +32980,7 @@ var Add = function (_React$Component) {
               _react2.default.createElement(
                 'select',
                 { id: 'measureKind', name: 'measureKind', style: { position: "absolute", top: "154px", left: "225px" }, value: this.state.measureKind, onChange: this.handleSelectChange },
+                _react2.default.createElement('option', null),
                 _react2.default.createElement(
                   'option',
                   null,
@@ -33007,6 +33005,7 @@ var Add = function (_React$Component) {
               _react2.default.createElement(
                 'select',
                 { id: 'scope', name: 'scope', style: { position: "absolute", top: "181px", left: "225px" }, value: this.state.scope, onChange: this.handleSelectChange },
+                _react2.default.createElement('option', null),
                 _react2.default.createElement(
                   'option',
                   null,
@@ -33031,6 +33030,7 @@ var Add = function (_React$Component) {
               _react2.default.createElement(
                 'select',
                 { id: 'location', name: 'location', style: { position: "absolute", top: "208px", left: "225px" }, value: this.state.location, onChange: this.handleSelectChange },
+                _react2.default.createElement('option', null),
                 _react2.default.createElement(
                   'option',
                   null,
@@ -33055,6 +33055,7 @@ var Add = function (_React$Component) {
               _react2.default.createElement(
                 'select',
                 { id: 'status', name: 'status', style: { position: "absolute", top: "235px", left: "225px" }, value: this.state.status, onChange: this.handleSelectChange },
+                _react2.default.createElement('option', null),
                 _react2.default.createElement(
                   'option',
                   null,
@@ -33076,19 +33077,11 @@ var Add = function (_React$Component) {
                 { htmlFor: 'comment', style: { position: "absolute", top: "262px", left: "19px" } },
                 '\u041F\u0440\u0438\u043C\u0435\u0447\u0430\u043D\u0438\u0435:'
               ),
-<<<<<<< HEAD
               _react2.default.createElement('input', { type: 'text', id: 'comment', name: 'comment', style: { position: "absolute", top: "262px", left: "225px" }, value: this.state.comment, onChange: this.handleTextChange })
             ),
             _react2.default.createElement(
               'fieldset',
               { className: 'Passport' },
-=======
-              _react2.default.createElement('input', { type: 'text', id: 'comment', name: 'comment', value: this.state.comment, onChange: this.handleTextChange })
-            ),
-            _react2.default.createElement(
-              'div',
-              { id: 'Passport', style: { float: 'left' } },
->>>>>>> 4926308ad414f5166d5bdd84f91160c6120c86fc
               _react2.default.createElement(
                 'label',
                 { htmlFor: 'serial_number', style: { position: "absolute", left: "19px", top: "354px" } },
@@ -33100,7 +33093,7 @@ var Add = function (_React$Component) {
                 { htmlFor: 'passport_number', style: { position: "absolute", top: "354px", left: "463px" } },
                 '\u041F\u0430\u0441\u043F\u043E\u0440\u0442 \u2116:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'passport_number', name: 'passport_number', style: { position: "absolute", top: "354px", left: "630spx" }, value: this.state.passport_number, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'passport_number', name: 'passport_number', style: { position: "absolute", top: "354px", left: "625px" }, value: this.state.passport_number, onChange: this.handleTextChange }),
               _react2.default.createElement(
                 'label',
                 { htmlFor: 'inventory_number', style: { position: "absolute", top: "382px", left: "19px" } },
@@ -33110,9 +33103,9 @@ var Add = function (_React$Component) {
               _react2.default.createElement(
                 'label',
                 { htmlFor: 'stock_number', style: { position: "absolute", top: "382px", left: "463px" } },
-                '\u041D\u043E\u043C\u0435\u043D\u043A\u043B\u0430\u0442\u0443\u0440\u043D\u044B\u0439 \u043D\u043E\u043C\u0435\u0440'
+                '\u041D\u043E\u043C\u0435\u043D\u043A\u043B\u0430\u0442\u0443\u0440\u043D\u044B\u0439 \u2116:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'stock_number', name: 'stock_number', style: { position: "absolute", top: "382px", left: "630px" }, value: this.state.stock_number, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'stock_number', name: 'stock_number', style: { position: "absolute", top: "382px", left: "625px" }, value: this.state.stock_number, onChange: this.handleTextChange }),
               _react2.default.createElement(
                 'label',
                 { htmlFor: 'maker', style: { position: "absolute", top: "410px", left: "19px" } },
@@ -33121,6 +33114,7 @@ var Add = function (_React$Component) {
               _react2.default.createElement(
                 'select',
                 { id: 'maker', name: 'maker', style: { position: "absolute", top: "410px", left: "225px" }, value: this.state.maker, onChange: this.handleSelectChange },
+                _react2.default.createElement('option', null),
                 _react2.default.createElement(
                   'option',
                   null,
@@ -33139,80 +33133,77 @@ var Add = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'barcode' },
+                { htmlFor: 'barcode', style: { position: "absolute", left: "19px", top: "440px" } },
                 '\u0428\u0442\u0440\u0438\u0445-\u043A\u043E\u0434:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'barcode', name: 'barcode', value: this.state.barcode, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'barcode', name: 'barcode', style: { position: "absolute", left: "225px", top: "440px" }, value: this.state.barcode, onChange: this.handleTextChange }),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'initial_cost' },
+                { htmlFor: 'initial_cost', style: { position: "absolute", left: "19px", top: "469px" } },
                 '\u041D\u0430\u0447\u0430\u043B\u044C\u043D\u0430\u044F \u0441\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'initial_cost', name: 'initial_cost', value: this.state.initial_cost, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'initial_cost', name: 'initial_cost', style: { position: "absolute", left: "225px", top: "469px" }, value: this.state.initial_cost, onChange: this.handleTextChange }),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'construction_date' },
+                { htmlFor: 'construction_date', style: { position: "absolute", left: "463px", top: "469px" } },
                 '\u0414\u0430\u0442\u0430 \u0432\u0432\u043E\u0434\u0430 \u0432 \u044D\u043A\u0441\u043F\u043B\u0443\u0430\u0442\u0430\u0446\u0438\u044E:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'construction_date', name: 'construction_date', value: this.state.construction_date, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'construction_date', name: 'construction_date', value: this.state.construction_date, onChange: this.handleTextChange, style: { position: "absolute", left: "677px", top: "469px", width: "126px" } }),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'start_date' },
+                { htmlFor: 'start_date', style: { position: "absolute", left: "19px", top: "498px" } },
                 '\u0414\u0430\u0442\u0430 \u0438\u0437\u0433\u043E\u0442\u043E\u0432\u043B\u0435\u043D\u0438\u044F:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'start_date', name: 'start_date', value: this.state.start_date, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'start_date', name: 'start_date', value: this.state.start_date, onChange: this.handleTextChange, style: { position: "absolute", left: "225px", top: "498px" } }),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'change_data' },
+                { htmlFor: 'change_data', style: { position: "absolute", left: "463px", top: "498px" } },
                 '\u0414\u0430\u0442\u0430 \u0437\u0430\u043C\u0435\u043D\u044B \u043D\u0430 \u043D\u043E\u0432\u044B\u0439:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'change_data', name: 'change_data', value: this.state.change_data, onChange: this.handleTextChange })
+              _react2.default.createElement('input', { type: 'text', id: 'change_data', name: 'change_data', value: this.state.change_data, onChange: this.handleTextChange, style: { position: "absolute", left: "677px", top: "498px", width: "126px" } })
             ),
             _react2.default.createElement(
-<<<<<<< HEAD
               'fieldset',
-=======
-              'div',
->>>>>>> 4926308ad414f5166d5bdd84f91160c6120c86fc
               { className: 'Verification' },
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'last_verif_date' },
+                { htmlFor: 'last_verif_date', style: { position: "absolute", left: "837px", top: "72px" } },
                 '\u0414\u0430\u0442\u0430 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0439 \u043F\u043E\u0432\u0435\u0440\u043A\u0438:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'last_verif_date', name: 'last_verif_date', value: this.state.last_verif_date, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'last_verif_date', name: 'last_verif_date', value: this.state.last_verif_date, onChange: this.handleTextChange, style: { position: "absolute", left: "1040px", top: "72px" } }),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'verif_period' },
+                { htmlFor: 'verif_period', style: { position: "absolute", left: "837px", top: "99px" } },
                 '\u041F\u0435\u0440\u0438\u043E\u0434 \u043F\u043E\u0432\u0435\u0440\u043A\u0438, \u043C\u0435\u0441\u044F\u0446:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'verif_period', name: 'verif_period', value: this.state.verif_period, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'verif_period', name: 'verif_period', value: this.state.verif_period, onChange: this.handleTextChange, style: { position: "absolute", left: "1040px", top: "99px" } }),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'next_verif_date' },
+                { htmlFor: 'next_verif_date', style: { position: "absolute", left: "837px", top: "126px" } },
                 '\u0414\u0430\u0442\u0430 \u043E\u0447\u0435\u0440\u0435\u0434\u043D\u043E\u0439 \u043F\u043E\u0432\u0435\u0440\u043A\u0438:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'next_verif_date', name: 'next_verif_date', value: this.state.next_verif_date, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'next_verif_date', name: 'next_verif_date', value: this.state.next_verif_date, onChange: this.handleTextChange, style: { position: "absolute", left: "1040px", top: "126px" } }),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'left_until' },
+                { htmlFor: 'left_until', style: { position: "absolute", left: "837px", top: "153px" } },
                 '\u0414\u043E \u043F\u043E\u0432\u0435\u0440\u043A\u0438 \u043E\u0441\u0442\u0430\u043B\u043E\u0441\u044C, \u0434\u0435\u043D\u044C:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'left_until', name: 'left_until', value: this.state.left_until, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'left_until', name: 'left_until', value: this.state.left_until, onChange: this.handleTextChange, style: { position: "absolute", left: "1040px", top: "153px" } }),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'verif_cost' },
+                { htmlFor: 'verif_cost', style: { position: "absolute", left: "837px", top: "179px" } },
                 '\u0421\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C \u043F\u043E\u0432\u0435\u0440\u043A\u0438:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'verif_cost', name: 'verif_cost', value: this.state.verif_cost, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'verif_cost', name: 'verif_cost', value: this.state.verif_cost, onChange: this.handleTextChange, style: { position: "absolute", left: "1040px", top: "179px" } }),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'verif_location' },
+                { htmlFor: 'verif_location', style: { position: "absolute", left: "837px", top: "205px" } },
                 '\u041C\u0435\u0441\u0442\u043E \u043F\u043E\u0432\u0435\u0440\u043A\u0438:'
               ),
               _react2.default.createElement(
                 'select',
-                { id: 'verif_location', name: 'verif_location', value: this.state.verif_location, onChange: this.handleSelectChange },
+                { id: 'verif_location', name: 'verif_location', value: this.state.verif_location, onChange: this.handleSelectChange, style: { position: "absolute", left: "1040px", top: "205px" } },
+                _react2.default.createElement('option', null),
                 _react2.default.createElement(
                   'option',
                   null,
@@ -33231,18 +33222,19 @@ var Add = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'verif_unit_code' },
+                { htmlFor: 'verif_unit_code', style: { position: "absolute", left: "837px", top: "231px", width: "250px" } },
                 '\u041A\u043E\u0434 \u043F\u043E\u0432\u0435\u0440\u043E\u0447\u043D\u043E\u0433\u043E \u043F\u043E\u0434\u0440\u0430\u0437\u0434\u0435\u043B\u0435\u043D\u0438\u044F:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'verif_unit_code', name: 'verif_unit_code', value: this.state.verif_unit_code, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'verif_unit_code', name: 'verif_unit_code', value: this.state.verif_unit_code, onChange: this.handleTextChange, style: { position: "absolute", left: "1085px", top: "231px", width: "133px" } }),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'verif_type' },
+                { htmlFor: 'verif_type', style: { position: "absolute", left: "837px", top: "258px" } },
                 '\u0412\u0438\u0434 \u043F\u043E\u0432\u0435\u0440\u043A\u0438:'
               ),
               _react2.default.createElement(
                 'select',
-                { id: 'verif_type', name: 'verif_type', value: this.state.verif_type, onChange: this.handleSelectChange },
+                { id: 'verif_type', name: 'verif_type', value: this.state.verif_type, onChange: this.handleSelectChange, style: { position: "absolute", left: "1040px", top: "258px" } },
+                _react2.default.createElement('option', null),
                 _react2.default.createElement(
                   'option',
                   null,
@@ -33261,12 +33253,13 @@ var Add = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'verif_metodology' },
+                { htmlFor: 'verif_metodology', style: { position: "absolute", left: "837px", top: "286px" } },
                 '\u041C\u0435\u0442\u043E\u0434\u0438\u043A\u0430 \u043F\u043E\u0432\u0435\u0440\u043A\u0438:'
               ),
               _react2.default.createElement(
                 'select',
-                { id: 'verif_metodology', name: 'verif_metodology', value: this.state.verif_metodology, onChange: this.handleSelectChange },
+                { id: 'verif_metodology', name: 'verif_metodology', value: this.state.verif_metodology, onChange: this.handleSelectChange, style: { position: "absolute", left: "1040px", top: "286px" } },
+                _react2.default.createElement('option', null),
                 _react2.default.createElement(
                   'option',
                   null,
@@ -33285,12 +33278,13 @@ var Add = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'verif_officer_name' },
+                { htmlFor: 'verif_officer_name', style: { position: "absolute", left: "837px", top: "314px" } },
                 '\u0424\u0418\u041E \u043F\u043E\u0432\u0435\u0440\u0438\u0442\u0435\u043B\u044F:'
               ),
               _react2.default.createElement(
                 'select',
-                { id: 'verif_officer_name', name: 'verif_officer_name', value: this.state.verif_officer_name, onChange: this.handleSelectChange },
+                { id: 'verif_officer_name', name: 'verif_officer_name', value: this.state.verif_officer_name, onChange: this.handleSelectChange, style: { position: "absolute", left: "1040px", top: "314px" } },
+                _react2.default.createElement('option', null),
                 _react2.default.createElement(
                   'option',
                   null,
@@ -33309,12 +33303,13 @@ var Add = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'conclusion' },
+                { htmlFor: 'conclusion', style: { position: "absolute", left: "837px", top: "340px" } },
                 '\u0417\u0430\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435:'
               ),
               _react2.default.createElement(
                 'select',
-                { id: 'conclusion', name: 'conclusion', value: this.state.conclusion, onChange: this.handleSelectChange },
+                { id: 'conclusion', name: 'conclusion', value: this.state.conclusion, onChange: this.handleSelectChange, style: { position: "absolute", left: "1040px", top: "340px" } },
+                _react2.default.createElement('option', null),
                 _react2.default.createElement(
                   'option',
                   null,
@@ -33333,18 +33328,19 @@ var Add = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'report_number' },
-                '\u2116 \u043F\u0440\u043E\u0442\u043E\u043A\u043E\u043B\u0430:'
+                { htmlFor: 'report_number', style: { position: "absolute", left: "837px", top: "367px", width: "290px" } },
+                '\u2116 \u043F\u0440\u043E\u0442\u043E\u043A\u043E\u043B\u0430 (\u0441\u0432-\u0432\u0430, \u0438\u0437\u0432\u0435\u0449. \u043E \u043D\u0435\u043F\u0440\u0438\u0433.):'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'report_number', name: 'report_number', value: this.state.report_number, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'report_number', name: 'report_number', value: this.state.report_number, onChange: this.handleTextChange, style: { position: "absolute", left: "1119px", top: "367px", width: "99px" } }),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'mark_type' },
+                { htmlFor: 'mark_type', style: { position: "absolute", left: "837px", top: "395px" } },
                 '\u0412\u0438\u0434 \u043A\u043B\u0435\u0439\u043C\u0430:'
               ),
               _react2.default.createElement(
                 'select',
-                { id: 'mark_type', name: 'mark_type', value: this.state.mark_type, onChange: this.handleSelectChange },
+                { id: 'mark_type', name: 'mark_type', value: this.state.mark_type, onChange: this.handleSelectChange, style: { position: "absolute", left: "1040px", top: "395px", width: "178px" } },
+                _react2.default.createElement('option', null),
                 _react2.default.createElement(
                   'option',
                   null,
@@ -33363,26 +33359,23 @@ var Add = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'mark_number' },
+                { htmlFor: 'mark_number', style: { position: "absolute", left: "837px", top: "423px" } },
                 '\u041A\u043B\u0435\u0439\u043C\u043E \u2116:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'mark_number', name: 'mark_number', value: this.state.mark_number, onChange: this.handleTextChange })
+              _react2.default.createElement('input', { type: 'text', id: 'mark_number', name: 'mark_number', value: this.state.mark_number, onChange: this.handleTextChange, style: { position: "absolute", left: "1040px", top: "423px" } })
             ),
             _react2.default.createElement(
-<<<<<<< HEAD
               'fieldset',
-=======
-              'div',
->>>>>>> 4926308ad414f5166d5bdd84f91160c6120c86fc
               { className: 'Repair' },
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'reason_for_repair' },
+                { htmlFor: 'reason_for_repair', style: { position: "absolute", left: "837px", top: "497px" } },
                 '\u041F\u0440\u0438\u0447\u0438\u043D\u0430 \u0440\u0435\u043C\u043E\u043D\u0442\u0430:'
               ),
               _react2.default.createElement(
                 'select',
-                { id: 'reason_for_repair', name: 'reason_for_repair', value: this.state.reason_for_repair, onChange: this.handleSelectChange },
+                { id: 'reason_for_repair', name: 'reason_for_repair', value: this.state.reason_for_repair, onChange: this.handleSelectChange, style: { position: "absolute", left: "1040px", top: "497px", width: "178px" } },
+                _react2.default.createElement('option', null),
                 _react2.default.createElement(
                   'option',
                   null,
@@ -33401,18 +33394,19 @@ var Add = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'repair_date' },
+                { htmlFor: 'repair_date', style: { position: "absolute", left: "837px", top: "526px" } },
                 '\u0414\u0430\u0442\u0430 \u0440\u0435\u043C\u043E\u043D\u0442\u0430:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'repair_date', name: 'repair_date', value: this.state.repair_date, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'repair_date', name: 'repair_date', value: this.state.repair_date, onChange: this.handleTextChange, style: { position: "absolute", left: "1040px", top: "526px" } }),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'repair_address' },
+                { htmlFor: 'repair_address', style: { position: "absolute", left: "837px", top: "553px" } },
                 '\u041C\u0435\u0441\u0442\u043E \u0440\u0435\u043C\u043E\u043D\u0442\u0430:'
               ),
               _react2.default.createElement(
                 'select',
-                { id: 'repair_address', name: 'repair_address', value: this.state.repair_address, onChange: this.handleSelectChange },
+                { id: 'repair_address', name: 'repair_address', value: this.state.repair_address, onChange: this.handleSelectChange, style: { position: "absolute", left: "1040px", top: "553px", width: "178px" } },
+                _react2.default.createElement('option', null),
                 _react2.default.createElement(
                   'option',
                   null,
@@ -33431,16 +33425,16 @@ var Add = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'repair_cost' },
+                { htmlFor: 'repair_cost', style: { position: "absolute", left: "837px", top: "581px" } },
                 '\u0421\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C \u0440\u0435\u043C\u043E\u043D\u0442\u0430:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'repair_cost', name: 'repair_cost', value: this.state.repair_cost, onChange: this.handleTextChange }),
+              _react2.default.createElement('input', { type: 'text', id: 'repair_cost', name: 'repair_cost', value: this.state.repair_cost, onChange: this.handleTextChange, style: { position: "absolute", left: "1040px", top: "582px" } }),
               _react2.default.createElement(
                 'label',
-                { htmlFor: 'short_description' },
+                { htmlFor: 'short_description', style: { position: "absolute", left: "837px", top: "609px" } },
                 '\u041A\u0440\u0430\u0442\u043A\u043E\u0435 \u043E\u043F\u0438\u0441\u0430\u043D\u0438\u0435 \u0440\u0435\u043C\u043E\u043D\u0442\u0430:'
               ),
-              _react2.default.createElement('input', { type: 'text', id: 'short_description', name: 'short_description', value: this.state.short_description, onChange: this.handleTextChange })
+              _react2.default.createElement('input', { type: 'text', id: 'short_description', name: 'short_description', value: this.state.short_description, onChange: this.handleTextChange, style: { position: "absolute", left: "1040px", top: "609px" } })
             ),
             _react2.default.createElement(
               'div',
@@ -33448,8 +33442,8 @@ var Add = function (_React$Component) {
               _react2.default.createElement('br', null),
               _react2.default.createElement(
                 _reactBootstrap.Button,
-                { bsStyle: 'success', bsSize: 'small', onClick: this.onClick },
-                'Add New Expense'
+                { bsStyle: 'success', bsSize: 'small', onClick: this.onClick, style: { position: "absolute", left: "636px", top: "648px" } },
+                '\u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u0421\u0418'
               )
             )
           )
@@ -46222,11 +46216,7 @@ exports = module.exports = __webpack_require__(376)(undefined);
 
 
 // module
-<<<<<<< HEAD
-exports.push([module.i, "/*client/css/App.css*/\r\n.button-col {\r\n    width:100px;\r\n    text-align:center;\r\n}\r\n.desc-col {\r\n width:300px;\r\n text-align:left;\r\n}\r\ntable {\r\n    counter-reset: tableCount;\r\n}\r\n.counterCell:before {\r\n    content: counter(tableCount);\r\n    counter-increment: tableCount;\r\n}\r\n.counterCell {\r\n text-align: center;\r\n width:50px;\r\n}\r\n.button-center {\r\n text-align: center;\r\n}\r\n.Modal {\r\n   position: relative;\r\n   top: 10px;\r\n   left: 150px;\r\n   right: 20px;\r\n   bottom: 20px;\r\n   background-color: #F5F5F5;\r\n<<<<<<< HEAD\r\n   width: 1300px;\r\n=======\r\n   width: 1000px;\r\n>>>>>>> 4926308ad414f5166d5bdd84f91160c6120c86fc\r\n   border: 1px solid #000;\r\n   border-radius: 4px;\r\n   padding: 20px;\r\n   height: 700px;\r\n }\r\n.Overlay {\r\n   position: fixed;\r\n   top: 0;\r\n   left: 0;\r\n   right: 0;\r\n   bottom: 0;\r\n   background-color: rebeccapurple;\r\n }\r\n.button-center {\r\n  text-align: center;\r\n }\r\nlabel{\r\n display:inline-block;\r\n width:200px;\r\n margin-right:30px;\r\n text-align:right;\r\n }\r\nfieldset{\r\n \r\n margin:0px auto;\r\n }\r\n.closebtn{\r\n   float:right;\r\n }\r\n.pAdd {\r\n    background-color: gray;\r\n    font-weight: bold;\r\n    color: white;\r\n}\r\ninput {\r\n    height: 18px;\r\n}", ""]);
-=======
-exports.push([module.i, "/*client/css/App.css*/\r\n.button-col {\r\n    width:100px;\r\n    text-align:center;\r\n}\r\n.desc-col {\r\n width:300px;\r\n text-align:left;\r\n}\r\ntable {\r\n    counter-reset: tableCount;\r\n}\r\n.counterCell:before {\r\n    content: counter(tableCount);\r\n    counter-increment: tableCount;\r\n}\r\n.counterCell {\r\n text-align: center;\r\n width:50px;\r\n}\r\n.button-center {\r\n text-align: center;\r\n}\r\n.Modal {\r\n   position: relative;\r\n   top: 10px;\r\n   left: 200px;\r\n   right: 20px;\r\n   bottom: 20px;\r\n   background-color: #F5F5F5;\r\n   width: 1000px;\r\n   border: 1px solid #000;\r\n   border-radius: 4px;\r\n   padding: 20px;\r\n }\r\n.Overlay {\r\n   position: fixed;\r\n   top: 0;\r\n   left: 0;\r\n   right: 0;\r\n   bottom: 0;\r\n   background-color: rebeccapurple;\r\n }\r\n.button-center {\r\n  text-align: center;\r\n }\r\nlabel{\r\n display:inline-block;\r\n width:200px;\r\n margin-right:30px;\r\n text-align:right;\r\n }\r\nfieldset{\r\n \r\n margin:0px auto;\r\n }\r\n.closebtn{\r\n   float:right;\r\n }\r\n.pAdd {\r\n    background-color: gray;\r\n    font-weight: bold;\r\n    color: white;\r\n}\r\n#Device {\r\n    float: left;\r\n    overflow: hidden;\r\n}\r\n#Passport {\r\n    float: left;\r\n    margin-left: 10px;\r\n    overflow: hidden;\r\n}", ""]);
->>>>>>> 4926308ad414f5166d5bdd84f91160c6120c86fc
+exports.push([module.i, "/*client/css/App.css*/\r\n.button-col {\r\n    width:100px;\r\n    text-align:center;\r\n}\r\n.desc-col {\r\n width:300px;\r\n text-align:left;\r\n}\r\ntable {\r\n    counter-reset: tableCount;\r\n}\r\n.counterCell:before {\r\n    content: counter(tableCount);\r\n    counter-increment: tableCount;\r\n}\r\n.counterCell {\r\n text-align: center;\r\n width:50px;\r\n}\r\n.button-center {\r\n text-align: center;\r\n}\r\n.Modal {\r\n   position: relative;\r\n   top: 10px;\r\n   left: 55px;\r\n   right: 20px;\r\n   bottom: 20px;\r\n   background-color: #F5F5F5;\r\n   width: 1300px;\r\n   border: 1px solid #000;\r\n   border-radius: 4px;\r\n   padding: 20px;\r\n   height: 700px;\r\n }\r\n.Overlay {\r\n   position: fixed;\r\n   top: 0;\r\n   left: 0;\r\n   right: 0;\r\n   bottom: 0;\r\n   background-color: rebeccapurple;\r\n }\r\n.button-center {\r\n  text-align: center;\r\n }\r\nlabel{\r\n display:inline-block;\r\n width:200px;\r\n margin-right:30px;\r\n text-align:right;\r\n }\r\nfieldset{\r\n \r\n margin:0px auto;\r\n }\r\n.closebtn{\r\n   float:right;\r\n }\r\n.pAdd {\r\n    background-color: gray;\r\n    font-weight: bold;\r\n    color: white;\r\n}\r\nlabel {\r\n    text-align: left;\r\n}\r\ninput {\r\n    height: 18px;\r\n}", ""]);
 
 // exports
 
