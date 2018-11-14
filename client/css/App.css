@@ -23,15 +23,16 @@ table {
 }
 .Modal {
    position: relative;
-   top: 250px;
-   left: 400px;
+   top: 10px;
+   left: 55px;
    right: 20px;
    bottom: 20px;
    background-color: #F5F5F5;
-   width:500px;
+   width: 1300px;
    border: 1px solid #000;
    border-radius: 4px;
    padding: 20px;
+   height: 700px;
  }
 .Overlay {
    position: fixed;
@@ -51,9 +52,20 @@ label{
  text-align:right;
  }
 fieldset{
- border:none;
+ 
  margin:0px auto;
  }
 .closebtn{
    float:right;
  }
+.pAdd {
+    background-color: gray;
+    font-weight: bold;
+    color: white;
+}
+label {
+    text-align: left;
+}
+input {
+    height: 18px;
+}

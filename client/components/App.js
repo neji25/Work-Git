@@ -9,7 +9,7 @@ export default class App extends Component {
 
   constructor() {
     super();
-    this.state = {selectedclassSO: 'Nov', selectedScope: 2016, data: []};
+    this.state = {locationDevice: 'Nov', data: []};
     this.getData = this.getData.bind(this);
   }
   componentDidMount() {
@@ -28,7 +28,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Add selectedclassSO={this.state.selectedclassSO} selectedScope={this.state.selectedScope} />
+        <Add locationDevice={this.state.locationDevice} />
         <table>
           <thead>
             <tr>
