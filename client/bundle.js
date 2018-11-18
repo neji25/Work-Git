@@ -31659,7 +31659,172 @@ var App = function (_Component) {
               _react2.default.createElement(
                 'th',
                 { className: 'button-col' },
+                '\u0412\u0438\u0434 \u0438\u0437\u043C\u0435\u0440\u0435\u043D\u0438\u044F'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
                 '\u0421\u0444\u0435\u0440\u0430 \u043F\u0440\u0438\u043C\u0435\u043D\u0435\u043D\u0438\u044F'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u041C\u0435\u0441\u0442\u043E \u043D\u0430\u0445\u043E\u0436\u0434\u0435\u043D\u0438\u044F'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u0421\u043E\u0441\u0442\u043E\u044F\u043D\u0438\u0435 \u0421\u0418'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u041F\u0440\u0438\u043C\u0435\u0447\u0430\u043D\u0438\u0435'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u0417\u0430\u0432\u043E\u0434\u0441\u043A\u043E\u0439 \u2116'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u041F\u0430\u0441\u043F\u043E\u0440\u0442 \u2116'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u0418\u043D\u0432\u0435\u043D\u0442\u0430\u0440\u043D\u044B\u0439 \u2116'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u041D\u043E\u043C\u0435\u043D\u043A\u043B\u0430\u0442\u0443\u0440\u043D\u044B\u0439 \u2116'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u0418\u0437\u0433\u043E\u0442\u043E\u0432\u0438\u0442\u0435\u043B\u044C'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u0428\u0442\u0440\u0438\u0445-\u043A\u043E\u0434'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u041D\u0430\u0447\u0430\u043B\u044C\u043D\u0430\u044F \u0441\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u0414\u0430\u0442\u0430 \u0432\u0432\u043E\u0434\u0430 \u0432 \u044D\u043A\u0441\u043F\u043B\u0443\u0430\u0442\u0430\u0446\u0438\u044E'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u0414\u0430\u0442\u0430 \u0438\u0437\u0433\u043E\u0442\u043E\u0432\u043B\u0435\u043D\u0438\u044F'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u0414\u0430\u0442\u0430 \u0437\u0430\u043C\u0435\u043D\u044B \u043D\u0430 \u043D\u043E\u0432\u044B\u0439'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u0414\u0430\u0442\u0430 \u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0435\u0439 \u043F\u043E\u0432\u0435\u0440\u043A\u0438'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u041F\u0435\u0440\u0438\u043E\u0434 \u043F\u043E\u0432\u0435\u0440\u043A\u0438, \u043C\u0435\u0441\u044F\u0446'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u0414\u0430\u0442\u0430 \u043E\u0447\u0435\u0440\u0435\u0434\u043D\u043E\u0439 \u043F\u043E\u0432\u0435\u0440\u043A\u0438'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u0414\u043E \u043F\u043E\u0432\u0435\u0440\u043A\u0438 \u043E\u0441\u0442\u0430\u043B\u043E\u0441\u044C, \u0434\u0435\u043D\u044C'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u0421\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C \u043F\u043E\u0432\u0435\u0440\u043A\u0438'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u041C\u0435\u0441\u0442\u043E \u043F\u043E\u0432\u0435\u0440\u043A\u0438'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u041A\u043E\u0434 \u043F\u043E\u0432\u0435\u0440\u043E\u0447\u043D\u043E\u0433\u043E \u043F\u043E\u0434\u0440\u0430\u0437\u0434\u0435\u043B\u0435\u043D\u0438\u044F'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u0412\u0438\u0434 \u043F\u043E\u0432\u0435\u0440\u043A\u0438'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u041C\u0435\u0442\u043E\u0434\u0438\u043A\u0430 \u043F\u043E\u0432\u0435\u0440\u043A\u0438'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u0424\u0418\u041E \u043F\u043E\u0432\u0435\u0440\u0438\u0442\u0435\u043B\u044F'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u0417\u0430\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u2116 \u0441\u0432\u0438\u0434\u0435\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u0412\u0438\u0434 \u043A\u043B\u0435\u0439\u043C\u0430'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u041A\u043B\u0435\u0439\u043C\u043E \u2116'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u041F\u0440\u0438\u0447\u0438\u043D\u0430 \u0440\u0435\u043C\u043E\u043D\u0442\u0430'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u0414\u0430\u0442\u0430 \u0440\u0435\u043C\u043E\u043D\u0442\u0430'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u041C\u0435\u0441\u0442\u043E \u0440\u0435\u043C\u043E\u043D\u0442\u0430'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u0421\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C \u0440\u0435\u043C\u043E\u043D\u0442\u0430'
+              ),
+              _react2.default.createElement(
+                'th',
+                { className: 'button-col' },
+                '\u041A\u0440\u0430\u0442\u043A\u043E\u0435 \u043E\u043F\u0438\u0441\u0430\u043D\u0438\u0435 \u0440\u0435\u043C\u043E\u043D\u0442\u0430'
               )
             )
           ),
@@ -31679,17 +31844,182 @@ var App = function (_Component) {
                 _react2.default.createElement(
                   'td',
                   { className: 'button-col' },
-                  exp.typeSO
+                  exp.type
                 ),
                 _react2.default.createElement(
                   'td',
                   { className: 'button-col' },
-                  exp.classSO
+                  exp.class
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.measureKind
                 ),
                 _react2.default.createElement(
                   'td',
                   { className: 'button-col' },
                   exp.scope
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.location
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.status
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.comment
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.passport.serial_number
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.passport.passport_number
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.passport.inventory_number
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.passport.stock_number
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.passport.maker
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.passport.barcode
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.passport.initial_cost
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.passport.construction_date
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.passport.start_date
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.passport.change_data
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.verification.last_verif_date
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.verification.verif_period
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.verification.next_verif_date
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.verification.left_until
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.verification.verif_cost
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.verification.verif_location
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.verification.verif_unit_code
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.verification.verif_type
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.verification.verif_metodology
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.verification.verif_officer_name
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.verification.conclusion
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.verification.report_number
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.verification.mark_type
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.verification.mark_number
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.repair.reason_for_repair
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.repair.repair_date
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.repair.repair_address
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.repair.repair_cost
+                ),
+                _react2.default.createElement(
+                  'td',
+                  { className: 'button-col' },
+                  exp.repair.short_description
                 )
               );
             })
