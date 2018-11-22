@@ -29,7 +29,7 @@ export default class App extends Component {
     return (
       <div>
         <Add locationDevice={this.state.locationDevice} />
-        <table>
+        <table className="commonTable">
           <thead>
             <tr>
               <th></th>
