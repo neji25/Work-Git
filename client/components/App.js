@@ -32,7 +32,7 @@ export default class App extends Component {
         <table className="commonTable">
           <thead>
             <tr>
-              <th></th>
+              <th>№ пп</th>
       {/* Device */}
               <th className="desc-col">Наименование СИ</th>
               <th className="button-col">Тип СИ</th>

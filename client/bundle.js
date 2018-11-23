@@ -31640,7 +31640,11 @@ var App = function (_Component) {
             _react2.default.createElement(
               'tr',
               null,
-              _react2.default.createElement('th', null),
+              _react2.default.createElement(
+                'th',
+                null,
+                '\u2116 \u043F\u043F'
+              ),
               _react2.default.createElement(
                 'th',
                 { className: 'desc-col' },
