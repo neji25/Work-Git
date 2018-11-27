@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 import Add from './Add';
+import SelectSO from './SelectSO';
 import '../css/App.css';
 
 export default class App extends Component {
@@ -28,7 +29,8 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Add locationDevice={this.state.locationDevice} />
+        <Add /* locationDevice={this.state.locationDevice} */ />
+        <SelectSO />
         <table className="commonTable">
           <thead>
             <tr>

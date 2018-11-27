@@ -62,11 +62,11 @@ closeModal() {
         messageFromServer: ''
       });
     }
-componentDidMount() {
+/* componentDidMount() {
       this.setState({
         location: this.props.locationDevice
       });
-    }
+    } */
 handleSelectChange(e) {
       switch(e.target.name) {
     //Device 
@@ -135,6 +135,7 @@ insertNewSO(e) {
       class: e.state.class,
       measureKind: e.state.measureKind,
       scope: e.state.scope,
+      location: e.state.location,
       status: e.state.status,
       comment: e.state.comment,
   //Passport
@@ -259,7 +260,7 @@ render() {
    if(this.state.messageFromServer == ''){
       return (
         <div>
-      <Button bsStyle="success" bsSize="small" onClick={this.openModal}><span className="glyphicon glyphicon-plus"></span></Button>
+      <Button bsStyle="success" bsSize="small" onClick={this.openModal}><span className="glyphicon glyphicon-plus"> Добавить СИ</span></Button>
           <Modal
             isOpen={this.state.modalIsOpen}
             onRequestClose={this.closeModal}
