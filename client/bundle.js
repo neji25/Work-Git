@@ -31923,19 +31923,28 @@ var App = function (_Component) {
   }
 
   _createClass(App, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      this.getData(this, '2016');
-    }
-  }, {
     key: 'componentWillReceiveProps',
     value: function componentWillReceiveProps(nextProps) {
-      this.getData(this, '2016');
+      if (nextProps.history.location.search) {
+        var search = nextProps.history.location.search;
+        search = search.substring(1);
+        var searchObj = JSON.parse('{"' + decodeURI(search).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g, '":"') + '"}');
+
+        this.getData(this, searchObj.title);
+      } else {
+        this.getData(this, 2016, 'All');
+      }
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.getData(this, 'Алкотест');
     }
   }, {
     key: 'getData',
-    value: function getData(ev, scope) {
-      _axios2.default.get('/getAll').then(function (response) {
+    value: function getData(ev, title) {
+      _axios2.default.get('/getAll?title=' + title) //Для работы фильтра добавить ?title= +title
+      .then(function (response) {
         ev.setState({ data: response.data });
       });
     }
@@ -46582,6 +46591,7 @@ var SelectSO = function (_React$Component) {
         _this.queryDB = _this.queryDB.bind(_this);
         //this.handleTextChange = this.handleTextChange.bind(this);
         _this.handleSelectChange = _this.handleSelectChange.bind(_this);
+        //this.onClick = this.onClick.bind(this);
         return _this;
     }
 
@@ -46657,7 +46667,7 @@ var SelectSO = function (_React$Component) {
                         },
                         _react2.default.createElement(
                             _reactRouterDom.Link,
-                            { to: { pathname: '/', search: '' }, style: { textDecoration: 'none' } },
+                            { to: { pathname: '/', search: '?title=' + this.state.title }, style: { textDecoration: 'none' } },
                             _react2.default.createElement(
                                 _reactBootstrap.Button,
                                 { bsStyle: 'danger', bsSize: 'small', onClick: this.closeModal },
@@ -46764,9 +46774,13 @@ var SelectSO = function (_React$Component) {
                                     )
                                 ),
                                 _react2.default.createElement(
-                                    _reactBootstrap.Button,
-                                    { bsStyle: 'success', bsSize: 'small', style: { position: 'absolute', top: '250px', left: '500px' } },
-                                    '\u041F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C \u0444\u0438\u043B\u044C\u0442\u0440'
+                                    _reactRouterDom.Link,
+                                    { to: { pathname: '/', search: '?title=' + this.state.title } },
+                                    _react2.default.createElement(
+                                        _reactBootstrap.Button,
+                                        { bsStyle: 'success', bsSize: 'small', onClick: this.closeModal, style: { position: 'absolute', top: '250px', left: '500px' } },
+                                        '\u041F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C \u0444\u0438\u043B\u044C\u0442\u0440'
+                                    )
                                 )
                             ),
                             _react2.default.createElement('div', null)

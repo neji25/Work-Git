@@ -109,12 +109,22 @@ router.get('/delete', function(req, res){
  })
 });
 router.get('/getAll', function(req, res) {
- 
- Device.find({}).populate(['passport', 'verification', 'repair']).exec(function(err, so) {
-   if(err)
-    res.send(err);
-    res.json(so);
+ var titleRec = req.query.title;
+ if(titleRec) {
+  Device.find({title: titleRec}).populate(['passport', 'verification', 'repair']).exec(function(err, so) {
+    if(err)
+     res.send(err);
+     res.json(so);
+  })
+ } else {
+  Device.find({}).populate(['passport', 'verification', 'repair']).exec(function(err, so) {
+    if(err)
+     res.send(err);
+     res.json(so);
  })
+ 
+ }
 });
+
 
  module.exports = router;

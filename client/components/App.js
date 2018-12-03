@@ -13,14 +13,25 @@ export default class App extends Component {
     this.state = {locationDevice: 'Nov', data: []};
     this.getData = this.getData.bind(this);
   }
-  componentDidMount() {
-    this.getData(this, '2016');
-  }
+
   componentWillReceiveProps(nextProps) {
-    this.getData(this, '2016');
+    if(nextProps.history.location.search){
+    var search = nextProps.history.location.search;
+    search = search.substring(1);
+    var searchObj = JSON.parse('{"' + decodeURI(search).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
+    
+    this.getData(this, searchObj.title);
+  }else{
+      this.getData(this, 2016, 'All');
+    }
   }
-  getData(ev, scope) {
-    axios.get('/getAll')
+
+  componentDidMount() {
+    this.getData(this, 'Алкотест');
+  }
+  
+  getData(ev, title) {
+    axios.get('/getAll?title='+title) //Для работы фильтра добавить ?title= +title
       .then(function(response) {
         ev.setState({data: response.data});
         

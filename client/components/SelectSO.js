@@ -21,7 +21,7 @@ class SelectSO extends React.Component {
         this.queryDB = this.queryDB.bind(this);
         //this.handleTextChange = this.handleTextChange.bind(this);
         this.handleSelectChange = this.handleSelectChange.bind(this);
-        this.onClick = this.onClick.bind(this);
+        //this.onClick = this.onClick.bind(this);
     }
 
     componentDidMount() {
@@ -35,13 +35,6 @@ class SelectSO extends React.Component {
         });
     }
 
-    onClick(e) {
-        this.getFilter(this);
-    }
-
-    getFilter(e) {
-        
-    }
 
     queryDB(req) {
         axios.get('/getAll').then(function(response) {
@@ -85,7 +78,7 @@ class SelectSO extends React.Component {
                      className='Modal'
                      style={{height:'300px'}}
                      >
-                        <Link to={{pathname:'/', search:''}} style={{textDecoration: 'none'}}>
+                        <Link to={{pathname:'/', search:'?title='+this.state.title}} style={{textDecoration: 'none'}}>
                             <Button bsStyle='danger' bsSize='small' onClick={this.closeModal}><span className='closebtn glyphicon glyphicon-remove'></span></Button>
                         </Link><br />
                         <fieldset>
@@ -118,7 +111,9 @@ class SelectSO extends React.Component {
                                     <option>Легкая промышленность</option>
                                     <option>Пищевая промышленность</option>
                                 </select>
-                                <Button bsStyle="success" bsSize="small" onClick={this.onClick} style={{position:'absolute',top:'250px',left:'500px'}}>Применить фильтр</Button>
+                                <Link to={{pathname:'/', search:'?title='+this.state.title}}>
+                                    <Button bsStyle="success" bsSize="small" onClick={this.closeModal} style={{position:'absolute',top:'250px',left:'500px'}}>Применить фильтр</Button>
+                                </Link>
                             </div>
                             <div></div>
                         </fieldset>
