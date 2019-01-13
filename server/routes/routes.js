@@ -110,7 +110,7 @@ router.get('/delete', function(req, res){
 });
 router.get('/getAll', function(req, res) {
  var titleRec = req.query.title;
- if(titleRec) {
+ if(titleRec == "se") {
   Device.find({title: titleRec}).populate(['passport', 'verification', 'repair']).exec(function(err, so) {
     if(err)
      res.send(err);
